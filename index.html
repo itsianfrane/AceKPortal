@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace-K Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="sklogo.jpg" alt="Ace-K Logo" class="logo">
+            </div>
+            <h2>Ace-K Portal</h2>
+            <nav>
+                <button class="sidebar-btn" onclick="toggleContent('dashboard')">Dashboard</button>
+                <button class="sidebar-btn" onclick="toggleContent('projects')">SK Projects</button>
+                <button class="sidebar-btn" onclick="toggleContent('announcements')">Announcements</button>
+                <button class="sidebar-btn" onclick="toggleContent('orgchart')">Org Chart</button>
+                <button class="sidebar-btn" onclick="toggleContent('calendar')">Calendar</button>
+                <button class="sidebar-btn" onclick="toggleContent('contacts')">Contacts</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+ 
+            <section id="dashboard" class="content-section active">
+                <h1>Welcome to Ace-K Portal</h1>
+                <p>Welcome youth leaders! The SK Management Portal helps you promote transparency and commitment to good governance, making it easy to share and access reliable information.</p>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <img src="projects.jpg" alt="Projects" class="card-img">
+                        <h3>Total Projects</h3>
+                        <p>10</p>
+                    </div>
+                    <div class="card">
+                        <img src="announcements.jpg" alt="Announcements" class="card-img">
+                        <h3>Announcements</h3>
+                        <p>10</p>
+                    </div>
+                    <div class="card">
+                        <img src="events.jpg" alt="Upcoming Events" class="card-img">
+                        <h3>Upcoming Events</h3>
+                        <p>10</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h1>SK Projects</h1>
+                <p>Manage all SK projects here. Status updates automatically based on the calendar.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Description</th>
+                            <th>Objectives</th>
+                            <th>Budget</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-event="Community Clean-up"><td>Community Clean-up</td><td>Weekly clean-up drives</td><td>Improve cleanliness</td><td>₱5,000</td><td>Completed</td></tr>
+                        <tr data-event="Youth Leadership Seminar"><td>Youth Leadership Seminar</td><td>Seminar for youth leadership skills</td><td>Develop leadership</td><td>₱10,000</td><td>Ongoing</td></tr>
+                        <tr data-event="Tree Planting"><td>Tree Planting</td><td>Planting trees in barangay parks</td><td>Promote environment</td><td>₱7,000</td><td>Planned</td></tr>
+                        <tr data-event="Health Awareness Campaign"><td>Health Awareness Campaign</td><td>Monthly health info drives</td><td>Raise awareness</td><td>₱4,000</td><td>Planned</td></tr>
+                        <tr data-event="Sports Program"><td>Sports Program</td><td>Inter-barangay sports activities</td><td>Promote fitness</td><td>₱8,000</td><td>Planned</td></tr>
+                        <tr data-event="Reading Initiative"><td>Reading Initiative</td><td>Book donation and reading sessions</td><td>Improve literacy</td><td>₱3,500</td><td>Planned</td></tr>
+                        <tr data-event="Music Workshop"><td>Music Workshop</td><td>Workshops for aspiring young musicians</td><td>Develop talent</td><td>₱6,000</td><td>Planned</td></tr>
+                        <tr data-event="Art and Crafts Exhibit"><td>Art and Crafts Exhibit</td><td>Showcase local youth artwork</td><td>Promote creativity</td><td>₱5,500</td><td>Planned</td></tr>
+                        <tr data-event="Computer Literacy Program"><td>Computer Literacy Program</td><td>Basic computing classes for youth</td><td>Enhance skills</td><td>₱9,000</td><td>Planned</td></tr>
+                        <tr data-event="Clean Water Project"><td>Clean Water Project</td><td>Community water sanitation program</td><td>Improve health</td><td>₱12,000</td><td>Planned</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="announcements" class="content-section">
+                <h1>Announcements</h1>
+                <p>View official SK announcements below.</p>
+                <div class="announcement-list">
+                    <div class="announcement"><h3>Barangay Meeting</h3><p>Date: Nov 25, 2025</p><p>Reminder for all SK officials to attend the monthly meeting.</p></div>
+                    <div class="announcement"><h3>Youth Festival</h3><p>Date: Dec 5, 2025</p><p>All youth are invited to participate in the annual festival activities.</p></div>
+                    <div class="announcement"><h3>Tree Planting Event</h3><p>Date: Dec 7, 2025</p><p>Join us for the tree planting activity in the park.</p></div>
+                    <div class="announcement"><h3>Sports Program Launch</h3><p>Date: Dec 10, 2025</p><p>Opening ceremony for inter-barangay sports program.</p></div>
+                    <div class="announcement"><h3>Health Awareness Drive</h3><p>Date: Dec 12, 2025</p><p>Free health check-ups and consultations for youth.</p></div>
+                    <div class="announcement"><h3>Art Exhibit</h3><p>Date: Dec 15, 2025</p><p>Local youth art exhibition at the community hall.</p></div>
+                    <div class="announcement"><h3>Music Workshop</h3><p>Date: Dec 18, 2025</p><p>Workshop for young musicians, register early.</p></div>
+                    <div class="announcement"><h3>Computer Literacy Program</h3><p>Date: Dec 20, 2025</p><p>Learn basic computer skills for free.</p></div>
+                    <div class="announcement"><h3>Reading Initiative</h3><p>Date: Dec 22, 2025</p><p>Donate books and join our reading session.</p></div>
+                    <div class="announcement"><h3>Clean Water Campaign</h3><p>Date: Dec 25, 2025</p><p>Community clean water and sanitation program.</p></div>
+                </div>
+            </section>
+
+            <section id="orgchart" class="content-section">
+                <h1>Organizational Chart</h1>
+                <div class="org-chart">
+                    <div class="org-member"><img src="gio.jpg" alt="SK Chairman Photo"><h3>SK Chairman</h3><p>Gio Campit</p></div>
+                    <div class="org-member"><img src="marianito.jpg" alt="SK Secretary Photo"><h3>SK Secretary</h3><p>Marianito Frane</p></div>
+                    <div class="org-member"><img src="ej.jpg" alt="SK Treasurer Photo"><h3>SK Treasurer</h3><p>Elthon-Jhon Mendoza</p></div>
+                    <div class="org-member"><img src="jay.jpg" alt="SK Councilor 1 Photo"><h3>SK Councilor 1</h3><p>Jay Renz Ilagan</p></div>
+                    <div class="org-member"><img src="kobe.jpg" alt="SK Councilor 2 Photo"><h3>SK Councilor 2</h3><p>Kobe Casañas</p></div>
+                </div>
+            </section>
+
+            <section id="calendar" class="content-section">
+                <h1>Calendar</h1>
+                <table class="calendar-table">
+                    <thead>
+                        <tr><th>Date</th><th>Event</th><th>Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Nov 25, 2025</td><td>Community Clean-up</td><td>Weekly clean-up drives</td></tr>
+                        <tr><td>Dec 1, 2025</td><td>Youth Leadership Seminar</td><td>Seminar for youth leadership skills</td></tr>
+                        <tr><td>Dec 5, 2025</td><td>Youth Festival</td><td>Annual youth festival with games, seminars, and contests.</td></tr>
+                        <tr><td>Dec 7, 2025</td><td>Tree Planting</td><td>Plant trees in the community park.</td></tr>
+                        <tr><td>Dec 10, 2025</td><td>Sports Program</td><td>Inter-barangay sports program opening.</td></tr>
+                        <tr><td>Dec 12, 2025</td><td>Health Awareness Campaign</td><td>Free health check-ups and consultations.</td></tr>
+                        <tr><td>Dec 15, 2025</td><td>Art and Crafts Exhibit</td><td>Display youth artwork at community hall.</td></tr>
+                        <tr><td>Dec 18, 2025</td><td>Music Workshop</td><td>Workshop for aspiring musicians.</td></tr>
+                        <tr><td>Dec 20, 2025</td><td>Computer Literacy Program</td><td>Free computer classes for youth.</td></tr>
+                        <tr><td>Dec 25, 2025</td><td>Clean Water Project</td><td>Community clean water and sanitation initiative.</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contacts" class="content-section">
+                <h1>Important Contacts & Hotlines</h1>
+                <div class="contact-cards">
+                    <div class="contact-card"><h3>Primary Emergency Services</h3><p>911</p></div>
+                    <div class="contact-card"><h3>SK Hotline</h3><p>777-233</p></div>
+                    <div class="contact-card"><h3>Philippine Red Cross</h3><p>143</p></div>
+                    <div class="contact-card"><h3>PNP</h3><p>117</p></div>
+                    <div class="contact-card"><h3>BFP</h3><p>(02) 8426-0219, (02) 8426-0246</p></div>
+                    <div class="contact-card"><h3>NDRRMC</h3><p>(02) 8911-5061 to 65</p></div>
+                    <div class="contact-card"><h3>DOH</h3><p>1555</p></div>
+                    <div class="contact-card"><h3>NCMH</h3><p>0917-899-8727 (USAP)</p></div>
+                    <div class="contact-card"><h3>PCG</h3><p>(02) 8527-3877</p></div>
+                    <div class="contact-card"><h3>PHIVOLCS</h3><p>(02) 8426-1468 to 79</p></div>
+                    <div class="contact-card"><h3>PAGASA</h3><p>(02) 8284-0800</p></div>
+                    <div class="contact-card"><h3>Complaint Hotline</h3><p>8888</p></div>
+                    <div class="contact-card"><h3>MMDA</h3><p>136</p></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
